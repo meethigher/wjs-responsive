@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*导入*/
+/*css中支持*/
+/*变量*/
+/*必须@前缀，相当于等于的意思，必须分号结束*/
+/*必须以数字开头，不能包含特殊字符，区分大小写*/
+a:hover {
+  color: #e92322;
+}
+div {
+  background-color: #e92322;
+}
+.box {
+  color: #e92322;
+}
+/*函数混入*/
+/*定义函数*/
+.w50-left {
+  width: 50%;
+  float: right;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -o-border-radius: 100px;
+  -ms-border-radius: 100px;
+}
+/*嵌套语法*/
+.wjs_app {
+  display: block;
+}
+.wjs_app img {
+  display: none;
+}
+.wjs_app:hover img {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -60px;
+  z-index: 99999999999;
+}
+.wjs_app::before {
+  content: "";
+}
+ul {
+  width: 700%;
+}
+ul li {
+  width: 14.28571429%;
+  background-color: #9a9a9a;
+}
+/*# sourceMappingURL=main.css.map */

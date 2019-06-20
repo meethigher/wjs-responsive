@@ -1,0 +1,39 @@
+///*混入*/
+///*组合样式的例子*/
+//.w50 {
+//  width:50px;
+//}
+//.f_left {
+//  float:left;
+//}
+//.f_right {
+//  float:right;
+//}
+//
+//
+///*类混入*/
+//.w50-left {
+//  .w50();
+//  .f_left();
+//}
+/*函数混入*/
+/*定义函数*/
+//
+.w50 (){
+  width:50%;
+}
+.f(@direction:left){
+  float:@direction;
+}
+.borderRadius(@width:100px) {
+  border-radius:@width;
+  -moz-border-radius: @width;
+  -webkit-border-radius: @width;
+  -o-border-radius:@width;
+  -ms-border-radius:@width;
+}
+.w50-left {
+  .w50();
+  .f(right);
+  .borderRadius();
+}

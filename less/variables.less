@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*css中支持*/
+//css不支持
+/*变量*/
+@mainColor:#e92322;
+/*必须@前缀，相当于等于的意思，必须分号结束*/
+/*必须以数字开头，不能包含特殊字符，区分大小写*/
+a:hover {
+  color:@mainColor;
+}
+div {
+  background-color: @mainColor;
+}
+@className:box;
+.@{className}{
+  color:@mainColor;
+}

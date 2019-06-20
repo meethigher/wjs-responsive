@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width:200px;
+            height:200px;
+            background-color: pink;
+            margin:200px auto;
+            position:relative;
+        }
+        .box::before {
+            position:absolute;
+            top:10px;
+            left:10px;
+            width:20px;
+            height:20px;
+            content:"";
+            background-color: #fff;
+            border-radius:5px;
+            display:block;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

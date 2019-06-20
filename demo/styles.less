@@ -1,0 +1,25 @@
+@hh:green;
+@size:10px;
+.bordered {
+  border-top:10px solid black;
+  border-bottom:dashed 10px yellow;
+}
+.box {
+  background-color: @hh;
+  width:100px;
+  height:100px;
+  box-sizing:content-box;
+  .box1 {
+    width:@size*5;
+    height:@size*5;
+    background-color: red;
+  }
+}
+.box.hh {
+  width:@size+100px;
+  height:100px+@size;
+}
+.box.hh1 {
+  .bordered();
+}
+

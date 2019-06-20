@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/*嵌套语法*/
+.wjs_app {
+  display: block;
+}
+.wjs_app img {
+  display: none;
+}
+.wjs_app:hover img {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -60px;
+  z-index: 99999999999;
+}
+.wjs_app::before {
+  content: "";
+}
+/*# sourceMappingURL=topBar.css.map */

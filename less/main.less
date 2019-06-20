@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*导入*/
+@import "variables";
+@import "maxins";
+@import "topBar";
+
+
+//内置函数
+@num:7;
+ul {
+  width:100%*@num;
+  li {
+    width:100%/@num;
+    background-color: lighten(grey,10%);
+  }
+}
+
+
+
+//运算

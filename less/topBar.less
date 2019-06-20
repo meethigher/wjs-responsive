@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/*嵌套语法*/
+.wjs_app {
+  display: block;
+  img {
+    display: none;
+  }
+  &:hover img {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 99999999999;
+  }
+  &::before {
+    content: "";
+  }
+}

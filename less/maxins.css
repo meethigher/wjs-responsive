@@ -1,0 +1,12 @@
+/*函数混入*/
+/*定义函数*/
+.w50-left {
+  width: 50%;
+  float: right;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -o-border-radius: 100px;
+  -ms-border-radius: 100px;
+}
+/*# sourceMappingURL=maxins.css.map */

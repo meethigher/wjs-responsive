@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*css中支持*/
+/*变量*/
+/*必须@前缀，相当于等于的意思，必须分号结束*/
+/*必须以数字开头，不能包含特殊字符，区分大小写*/
+a:hover {
+  color: #e92322;
+}
+div {
+  background-color: #e92322;
+}
+.box {
+  color: #e92322;
+}
+/*# sourceMappingURL=variables.css.map */

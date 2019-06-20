@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet/less" href="styles.less">
+</head>
+<body>
+<div class="box">
+    <div></div>
+</div>
+<button class="btn1">变量</button>
+<button class="btn2">混合</button>
+<button class="btn3">嵌套</button>
+<script src="https://cdn.bootcss.com/less.js/3.9.0/less.min.js"></script>
+<script>
+    let $box=document.querySelector(".box");
+    let $btn1=document.querySelector(".btn1");
+    let $btn2=document.querySelector(".btn2");
+    $btn1.onclick=function (){
+        $box.classList.add("hh");
+    };
+    $btn2.onclick=function (){
+        $box.classList.add("hh1");
+    };
+    let $btn3=document.querySelector(".btn3");
+    $btn3.onclick=function (){
+        document.querySelector(".box>div").classList.add("box1");
+    };
+</script>
+</body>
+</html>
